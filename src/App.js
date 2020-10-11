@@ -104,7 +104,7 @@ const VoteRanked = (props) => {
   });
 
   const [menuIndex, setMenuIndex] = React.useState(0)
-  const [unranked, setUnranked] = React.useState(props.unranked)
+  const [unranked] = React.useState(props.unranked)
 
   return (
     <div style={{
@@ -326,7 +326,7 @@ const HomeScreen = () => {
   return (
     <div style={{ display: "flex", flexDirection:"column", justifyContent: "center", height: "100vh" }}>
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-        <img src="vote_chair.png" style={{width: "400px", marginBottom: "30px"}}/>
+        <img src="vote_chair.png" style={{width: "400px", marginBottom: "30px"}} alt="Vote Chair"/>
 
         <div style={{ display: "flex", marginBottom: "20px" }}>
           <input type='text'
@@ -415,18 +415,6 @@ function App() {
       </div>
     </Router>
   )
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
 
 
