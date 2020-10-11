@@ -1,68 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Inspiration
 
-## Available Scripts
+The 2016 United States Presidential Election resulted in the rare, but not unique, occurrence where the popular vote does not align with the winner of the election. In circumstances like this the winner was chosen by the minority of voters, causing minority rule, which led to many citizens questioning voting systems in general. Why do we continue to use this system for elections in all levels of life even though it so often leads to most people being unhappy with the result? This is why we created Vote Chair. In addition to the societal issues caused by imperfect voting systems, student organizations also need better voting. For example, ranked voting allows lesser known candidates to have a better shot at positions because no vote seems "wasted" on an unlikely winner and approval voting gives everyone as many choices as they like so that the most favorable answer is easily found.
 
-In the project directory, you can run:
+# What it does
 
-### `npm start`
+On Vote Chair you can make the best ballots for any elections in student organizations, businesses, and even governments. Vote Chair offers many voting systems and you can use a different type for each question to best suit your needs. Featuring single, approval, and ranked voting, plus settings about anonymity and reducing bias through choice randomization, Vote Chair allows many combinations to create a customizable ballot. Lastly, the ballots are easily shareable through a link or code and no account is required to vote or create.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# What's next for Vote Chair
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+As soon as possible we will begin to use Vote Chair in our student organizations, such as sororities, fraternities, and academic societies. This way we will be able to used ranked voting in finding new individuals or slates to fill positions. With this new members will have a better chance at succeeding in elections and everyone will feel more confident while campaigning. Approval rating will be used to decide quick choices, like what food to get or movie to watch. Single votes will also be used when it is necessary to abide by school restrictions and Robert's Rules of Order. Because of the easily sharable nature of the ballots and the ease of voting without an account these votes can be quickly tallied and used in both casual and formal situations.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+After using the site in our own organizations, we plan to expand it to other college clubs and also advertise it as applicable to voting in businesses and governmental structures. Moreover, this can be used in classrooms as a way to expose students to various voting methods so that they may gain critical thinking skills about how to make decisions in different situations.
