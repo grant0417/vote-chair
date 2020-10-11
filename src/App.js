@@ -198,8 +198,16 @@ const CreateVote = (props) => {
 
   return (
     <div className='vote-box'>
-      <h2 className="editable" contentEditable>Name</h2>
-      <p className="editable" contentEditable>description</p>
+      <h2 className="editable" contentEditable>Vote Title</h2>
+      <p className="editable" contentEditable>Description</p>
+
+      <div style={{display: "flex"}}>
+        <div className="btn-group btn-group-block button-space">
+          <button className={"btn btn-primary"}>First-past-the-post</button>
+          <button className={"btn"}>Ranked Choice</button>
+          <button className={"btn"}>Approval</button>
+        </div>         
+      </div>
 
       <div style={{
         maxWidth: '600px',
@@ -221,6 +229,19 @@ const CreateVote = (props) => {
 
         </ul>
       </div>
+
+      <div style={{display: "flex"}}>
+        <label class="form-switch" style={{marginRight: "20px"}}>
+          <input type="checkbox" />
+          <i class="form-icon"></i> Require
+        </label>
+
+        <label class="form-switch">
+          <input type="checkbox" />
+          <i class="form-icon"></i> Randomize order of options
+        </label>  
+      </div>
+
     </div>
   )
 }
@@ -347,10 +368,10 @@ const HomeScreen = () => {
 }
 
 const VoteScreen = () => {
-  return (
+  return (    
     <div className="container grid-md">
       <div>
-        <Link to="/"><h1>Chair</h1></Link>
+        <Link to="/"><img src="../vote_chair.png" style={{width: "100px"}} alt="Vote Chair"/></Link>
       </div>
       <ElectionTitle />
       <Vote data={vote1} />
@@ -365,6 +386,9 @@ const CreateScreen = () => {
     <CreateVote />
   ]);
 
+  const [anonymous, setAnonymous] = React.useState(true);
+  const [secret, setSecret] = React.useState(false);
+
   const addVote = () => {
     setVote([...votes, <CreateVote />])
   }
@@ -372,24 +396,32 @@ const CreateScreen = () => {
   return (
     <div className="container grid-md">
       <div>
-        <Link to="/"><h1>Chair</h1></Link>
+        <Link to="/"><img src="../vote_chair.png" style={{width: "100px"}} alt="Vote Chair"/></Link>
       </div>
 
-      <div>
-        Anonymous
-        Recorded
+      <div style={{display: "flex"}}>
+        <div className="btn-group btn-group-block button-space">
+          <button className={"btn" + (anonymous ? " btn-primary" : "")} onClick={() => setAnonymous(true)} alt="Hello">Anonymous</button>
+          <button className={"btn" + (!anonymous ? " btn-primary" : "")} onClick={() => setAnonymous(false)}>Recorded</button>
+        </div>         
+          
+        <div className="btn-group btn-group-block button-space">
+          <button className={"btn" + (!secret ? " btn-primary" : "")} onClick={() => setSecret(false)}>Live</button>
+          <button className={"btn" + (secret ? " btn-primary" : "")}  onClick={() => setSecret(true)}>Secret</button>
+        </div> 
       </div>
 
-      <div>
-        Live
-        Secret
+      <div className='vote-box'>
+        <h1 contentEditable className="editable">Election Title</h1>
+        <p contentEditable className="editable">Description</p>
       </div>
-
+     
       {votes.map((vote) => 
         vote
       )}
 
       <div className='vote-box highlight-hover' onClick={addVote}><h3 style={{textAlign: "center"}}>+</h3></div>
+      <div className='vote-box highlight-hover'><h3 style={{textAlign: "center"}}>Publish...</h3></div>
 
 
     </div>
