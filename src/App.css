@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #333;
 }
 
-.App-link {
-  color: #61dafb;
+body, html {
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background: rgb(100,178,205);
+  background: linear-gradient(0deg, rgba(100,178,205,1) 0%, rgba(217,238,236,1) 35%, rgba(255,255,255,1) 100%);
+}
+
+.vote-box {
+  max-width: 100%;
+  padding: 1em;
+  margin: 0.5em 0em;
+  border: 2px solid #CCC;
+  box-shadow: 3px 3px #AAA;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.vote-option-box {
+  user-select: none;
+  padding: 1.5em;
+  margin: 0.5em 0em;
+  list-style-type: none;
+  border: 2px solid #CCC;
+  box-shadow: 3px 3px #AAA;
+  border-radius: 5px;
+  display: flex;
+}
+
+.vote-option-title {
+  font-size: large;
+  font-weight: bold;
+
+}
+
+.vote-option-description {
+  font-size: medium;
+  color: #555;
+  margin: auto;
+}
+
+.editable {
+  border: 1px solid #000;
+  margin: 2px;
+}
+
+.vote-order {
+  margin-top: auto;
+  margin-bottom: auto; 
+  margin-right: 10px;
+  font-size: larger;
+  font-family: "Permanent Marker";
+  color: navy;
+  border: 2px solid #3b4351;
+  border-radius: 3px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+}
+
+.highlight-hover:hover {
+  background-color: #eee;
+  cursor: pointer;
+  user-select: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
 }
