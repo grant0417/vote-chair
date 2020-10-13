@@ -1,4 +1,4 @@
-# Vote Chair
+# [Vote Chair](http://votechair.tech)
 
 Vote Chair is a project made for KnightHacks 2020 with @elizabethk714.
 
